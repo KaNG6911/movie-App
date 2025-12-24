@@ -6,7 +6,7 @@ export const Header = () => {
           <img src="Logo.png" alt="" />
         </button>
         <div className="flex flex-row gap-10">
-          <button>Genre </button>
+          <button className="border pl-4 pr-4 rounded-[10] border-gray-400 text-gray-500">Genre </button>
           <input
             className="flex pl-5 border-gray-400 border rounded-[10]"
             type="search"
