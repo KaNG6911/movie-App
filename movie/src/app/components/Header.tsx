@@ -5,11 +5,18 @@ export const Header = () => {
         <button>
           <img src="Logo.png" alt="" />
         </button>
-        <input className="flex pl-5 border-gray-400 border rounded-[10]" type="search" placeholder=" Search... " />
+        <div className="flex flex-row gap-10">
+          <button>Genre </button>
+          <input
+            className="flex pl-5 border-gray-400 border rounded-[10]"
+            type="search"
+            placeholder=" Search... "
+          />
+        </div>
         <button>
           <img src="darkTheme.png" alt="" />
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
