@@ -154,3 +154,41 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.movie-card {
+   background-color: rgb(232, 232, 232);
+   border-radius: 20px;
+   padding: 0 0 10px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   width: 280px;
+   height: 510px;
+   align-items: start;
+   margin: auto;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 0 0 10px;
+}
+
+p {
+  display: flex;
+  gap: 4px;
+  font-size: 13px;
+  padding: 10px 0 0 10px;
+  font-weight: 200;
+}
+span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  
+}
+

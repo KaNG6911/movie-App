@@ -14,14 +14,14 @@ export const Footer = () => {
             <div className="flex flex-row gap-3 items-center">
               <img className="w-4 h-3" src="email.png" alt="" />
               <div className="flex flex-col gap">
-                <p>Email:</p>
+                <h2>Email:</h2>
                 <button>support@movieZ.com</button>
               </div>
             </div>
             <div className="flex flex-row gap-3 items-center">
               <img className="w-4 h-4" src="phone.png" alt="" />
               <div>
-                <p>Phone:</p>
+                <h2>Phone:</h2>
                 <button>+976 (11) 123-4567</button>
               </div>
             </div>

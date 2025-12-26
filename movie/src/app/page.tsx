@@ -1,16 +1,14 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 // import { MovieCard } from "./components/MovieCard";
-import { Movies } from "./components/MovieCard";
-import { TopRated } from "./components/TopRated";
+import { MoviesAll } from "./components/MoviesAll";
 
 export default async function Home() {
-  
   return (
     <div>
       <Header />
       <div>
-        <TopRated />
+        <MoviesAll />
       </div>
       <Footer />
     </div>
