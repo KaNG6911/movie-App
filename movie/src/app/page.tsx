@@ -1,16 +1,11 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-// import { MovieCard } from "./components/MovieCard";
-import { MoviesAll } from "./components/MoviesAll";
+import Allmovie from "@/app/about/components/Allmovie";
+import NowPlaying from "@/app/about/components/Nowplaying";
 
-export default async function Home() {
+export default function Home() {
   return (
     <div>
-      <Header />
-      <div>
-        <MoviesAll />
-      </div>
-      <Footer />
+      <NowPlaying />
+      <Allmovie />
     </div>
   );
 }
