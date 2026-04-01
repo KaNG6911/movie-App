@@ -1,7 +1,7 @@
 "use client";
 
 import CarouselMovieContent from "./Carousel";
-import TrailerModal from "@/app/about/components/TrailerModal";
+import TrailerModal from "./TrailerModal";
 import { getMovieTrailer } from "@/lib/getMovieTrailer";
 import { Movie } from "../../../../index";
 
