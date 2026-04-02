@@ -79,7 +79,6 @@ export const Header = () => {
 
   return (
     <header className="border-b">
-      {/* Desktop: always visible search + genre */}
       <div className="hidden md:flex items-center justify-between px-20 py-4 gap-4">
         <Link
           href="/"
@@ -125,7 +124,6 @@ export const Header = () => {
         </button>
       </div>
 
-      {/* Mobile */}
       <div className="md:hidden">
         {searchOpen ? (
           <div className="flex items-center gap-2 px-4 py-4 relative">

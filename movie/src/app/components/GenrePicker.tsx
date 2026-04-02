@@ -108,7 +108,6 @@ export default function GenrePicker({
           })}
         </div>
 
-        {/* Apply / Clear */}
         <div className="flex justify-between items-center border-t pt-3">
           <button
             onClick={handleClear}

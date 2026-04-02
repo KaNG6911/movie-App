@@ -90,7 +90,6 @@ export default async function GenrePage({
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="flex justify-center items-center gap-1 mt-10">
         {currentPage > 1 ? (
           <Link

@@ -29,7 +29,6 @@ export default function MovieHero({ posterPath, backdropPath, trailer, genres, o
 
   return (
     <div>
-      {/* Mobile-only: backdrop + Play trailer button → opens fullscreen modal */}
       <div className="md:hidden relative w-full rounded-xl overflow-hidden bg-black aspect-video">
         {backdropPath ? (
           <img
@@ -58,9 +57,7 @@ export default function MovieHero({ posterPath, backdropPath, trailer, genres, o
         videoId={modalOpen && trailer ? trailer.key : null}
       />
 
-      {/* Shared row: poster + mobile genres/overview OR desktop trailer */}
       <div className="flex gap-4 mt-4 md:mt-0 md:h-96">
-        {/* Poster */}
         <div className="shrink-0 w-32 md:w-1/3 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-700 shadow-lg md:shadow-none self-start md:self-auto">
           {posterPath ? (
             <img
@@ -75,7 +72,6 @@ export default function MovieHero({ posterPath, backdropPath, trailer, genres, o
           )}
         </div>
 
-        {/* Mobile-only: genres + overview */}
         <div className="md:hidden flex flex-col gap-3 pt-2 min-w-0 flex-1">
           {genres.length > 0 && (
             <div className="flex flex-wrap gap-2">
@@ -89,7 +85,6 @@ export default function MovieHero({ posterPath, backdropPath, trailer, genres, o
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">{overview}</p>
         </div>
 
-        {/* Desktop-only: trailer (right 2/3) */}
         <div className="hidden md:block relative flex-1 rounded-xl overflow-hidden bg-black">
           {playingDesktop && trailer ? (
             <>

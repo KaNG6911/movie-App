@@ -76,7 +76,6 @@ export default function NowPlayingCarousel({ movies }: { movies: Movie[] }) {
           <CarouselNext className="right-2 h-10 w-10 bg-black/40 text-white hover:bg-black/60" />
         </Carousel>
 
-        {/* Dots — зурагны дотор доод хэсэгт (mobile only) */}
         <div className="md:hidden absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
           {movies.map((_, i) => (
             <button
@@ -90,7 +89,6 @@ export default function NowPlayingCarousel({ movies }: { movies: Movie[] }) {
         </div>
       </div>
 
-      {/* Mobile only: Now Playing мэдээлэл */}
       <div
         className="md:hidden"
         style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}

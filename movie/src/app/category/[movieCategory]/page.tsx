@@ -15,7 +15,6 @@ const getCategoryTitle = (category: string): string => {
   );
 };
 
-// Pagination дугааруудыг үүсгэх helper
 const getPaginationNumbers = (
   current: number,
   total: number,
@@ -48,19 +47,15 @@ export default async function MovieCategoryPage({
 
   return (
     <div className="px-4 md:px-10 lg:px-20 py-6">
-      {/* Title */}
       <h1 className="text-2xl font-bold mb-6">{title}</h1>
 
-      {/* Movies Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
         {movies.map((movie: Movie) => (
           <MovieCard movie={movie} key={movie.id} />
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="flex justify-center items-center gap-1 mt-10 mb-6">
-        {/* Previous */}
         {currentPage > 1 ? (
           <Link
             href={`/category/${movieCategory}?page=${currentPage - 1}`}
@@ -74,7 +69,6 @@ export default async function MovieCategoryPage({
           </span>
         )}
 
-        {/* Page Numbers */}
         {paginationNumbers.map((num, idx) =>
           num === "..." ? (
             <span
@@ -98,7 +92,6 @@ export default async function MovieCategoryPage({
           ),
         )}
 
-        {/* Next */}
         {currentPage < maxPages ? (
           <Link
             href={`/category/${movieCategory}?page=${currentPage + 1}`}

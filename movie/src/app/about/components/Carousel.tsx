@@ -9,14 +9,12 @@ type Props = {
 export default function CarouselMovieContent({ movie, onWatchTrailer }: Props) {
   return (
     <div className="w-full">
-      {/* Mobile: зөвхөн зураг — мэдээлэл доор тусдаа */}
       <img
         src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
         alt={movie.title}
         className="w-full h-62.5 object-cover object-center md:hidden"
       />
 
-      {/* Desktop: original overlay layout */}
       <div className="relative w-full h-140 hidden md:block text-white">
         <img
           src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}

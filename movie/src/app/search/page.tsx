@@ -79,7 +79,6 @@ export default async function SearchPage({
       <h1 className="text-2xl font-bold mb-2">Search results</h1>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        {/* LEFT: Results */}
         <div className="flex-1">
           {query && (
             <p className="text-sm font-bold mb-4">
@@ -95,7 +94,6 @@ export default async function SearchPage({
                 ))}
               </div>
 
-              {/* Pagination */}
               <div className="flex justify-center items-center gap-1 mt-8">
                 {currentPage > 1 ? (
                   <Link
@@ -162,7 +160,6 @@ export default async function SearchPage({
           )}
         </div>
 
-        {/* RIGHT: Genre filter */}
         <div className="w-full md:w-64 md:shrink-0">
           <h2 className="text-lg font-semibold mb-1">Search by genre</h2>
           <p className="text-sm text-gray-800 mb-4">

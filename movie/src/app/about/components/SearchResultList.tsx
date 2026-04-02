@@ -40,7 +40,6 @@ export default function SearchResultList({
             }}
             className="flex cursor-pointer items-center gap-3 px-3 py-2 hover:bg-gray-100"
           >
-            {/* Poster */}
             <div className="h-16 w-11 flex-shrink-0 overflow-hidden rounded-md bg-gray-200">
               {movie.poster_path ? (
                 <Image
@@ -55,7 +54,6 @@ export default function SearchResultList({
               )}
             </div>
 
-            {/* Info */}
             <div className="flex flex-col">
               <p className="text-sm font-medium">{movie.title}</p>
               <p className="text-xs text-gray-500">
@@ -69,7 +67,6 @@ export default function SearchResultList({
         ))}
       </ul>
 
-      {/* See all */}
       <div
         onClick={() => {
           router.push(`/search?query=${encodeURIComponent(word)}`);
