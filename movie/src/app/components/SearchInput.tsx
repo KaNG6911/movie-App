@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 
 type Props = {
   value: string;
-  onChange: (v: string) => void;
+  onChange: (value: string) => void;
   onEnter: () => void;
 };
 

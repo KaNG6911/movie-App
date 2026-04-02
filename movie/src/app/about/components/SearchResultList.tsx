@@ -15,7 +15,7 @@ type Props = {
   word: string;
   results: Movie[];
   onClose: () => void;
-  onNavigate?: () => void; // ← нэм
+  onNavigate?: () => void; 
 };
 
 export default function SearchResultList({

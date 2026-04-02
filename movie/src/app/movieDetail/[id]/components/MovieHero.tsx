@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import TrailerModal from "@/app/about/components/TrailerModal.tsx";
+import TrailerModal from "@/app/about/components/TrailerModal";
 
 const IMG_BASE = "https://image.tmdb.org/t/p";
 
